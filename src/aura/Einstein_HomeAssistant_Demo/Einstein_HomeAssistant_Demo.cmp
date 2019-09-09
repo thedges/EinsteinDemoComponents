@@ -1,0 +1,63 @@
+<aura:component extends="c:EinsteinWrapperCard" controller="EinsteinAwesomeController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global">
+    <aura:attribute name="lastInsight" type="Integer" />
+    <aura:attribute name="lead1_id" type="String" default="lead email here"/>
+    <aura:attribute name="lead1_ar" type="String[]" default="['&nbsp;','&nbsp;','&nbsp;']"/>
+    <aura:attribute name="lead2_id" type="String" default="lead email here"/>
+    <aura:attribute name="lead2_ar" type="String[]" default="['&nbsp;','&nbsp;','&nbsp;']"/>
+    <aura:attribute name="lead3_id" type="String" default="lead email here"/>
+    <aura:attribute name="lead3_ar" type="String[]" default="['&nbsp;','&nbsp;','&nbsp;']"/>
+    <aura:attribute name="class_cus0" type="String" default="invisible"/>
+    <aura:attribute name="class_cus1" type="String" default="invisible"/>
+    <aura:attribute name="class_cus2" type="String" default="invisible"/>
+    <aura:attribute name="class_cus3" type="String" default="invisible"/>
+    <aura:attribute name="class_cus3b" type="String[]" default="invisible"/>
+    <aura:attribute name="class_cus4" type="String" default="invisible"/>
+    <aura:attribute name="class_cus4b" type="String[]" default="invisible"/>
+    <aura:attribute name="class_cus5" type="String" default="invisible"/>
+    <aura:attribute name="class_cus5b" type="String[]" default="invisible"/>
+    <aura:attribute name="class_cus6" type="String" default="invisible"/>
+    <aura:attribute name="class_cus6b" type="String[]" default="invisible"/>
+    <aura:attribute name="class_cus7" type="String" default="invisible"/>
+    <aura:attribute name="class_cus7b" type="String[]" default="invisible"/>
+    <aura:attribute name="class_cus8" type="String" default="invisible"/>
+    <aura:attribute name="class_cus8b" type="String[]" default="invisible"/>
+    <aura:attribute name="class_col3" type="String" default="neut"/>
+    <aura:attribute name="class_col4" type="String" default="neut"/>
+    <aura:attribute name="class_col5" type="String" default="neut"/>
+    <aura:attribute name="class_col6" type="String" default="neut"/>
+    <aura:attribute name="class_col7" type="String" default="neut"/>
+    <aura:attribute name="class_col8" type="String" default="neut"/>
+    <aura:attribute name="oppi1_id" type="String" default="name here"/>
+    <aura:attribute name="oppi1_insight" type="String" default="Winning Unlikely"/>
+    <aura:attribute name="oppi1_ar" type="String[]" default="['&nbsp;','&nbsp;','&nbsp;']"/>
+    <aura:attribute name="ins_articles1_ar" type="String[]" default="['&nbsp;','&nbsp;','&nbsp;']"/>
+    <aura:attribute name="oppi2_id" type="String" default="name here"/>
+    <aura:attribute name="oppi2_insight" type="String" default="Winning Unlikely"/>
+    <aura:attribute name="oppi2_ar" type="String[]" default="['&nbsp;','&nbsp;','&nbsp;']"/>
+    <aura:attribute name="ins_articles2_ar" type="String[]" default="['&nbsp;','&nbsp;','&nbsp;']"/>
+    <aura:attribute name="oppi3_id" type="String" default="name here"/>
+    <aura:attribute name="oppi3_insight" type="String" default="Winning Unlikely"/>
+    <aura:attribute name="oppi3_ar" type="String[]" default="['&nbsp;','&nbsp;','&nbsp;']"/>
+    <aura:attribute name="ins_articles3_ar" type="String[]" default="['&nbsp;','&nbsp;','&nbsp;']"/>
+    <aura:attribute name="oppi4_id" type="String" default="name here"/>
+    <aura:attribute name="oppi4_insight" type="String" default="Winning Unlikely"/>
+    <aura:attribute name="oppi4_ar" type="String[]" default="['&nbsp;','&nbsp;','&nbsp;']"/>
+    <aura:attribute name="ins_articles4_ar" type="String[]" default="['&nbsp;','&nbsp;','&nbsp;']"/>
+    <aura:attribute name="oppi5_id" type="String" default="name here"/>
+    <aura:attribute name="oppi5_insight" type="String" default="Winning Unlikely"/>
+    <aura:attribute name="oppi5_ar" type="String[]" default="['&nbsp;','&nbsp;','&nbsp;']"/>
+    <aura:attribute name="ins_articles5_ar" type="String[]" default="['&nbsp;','&nbsp;','&nbsp;']"/>
+    <aura:attribute name="oppi6_id" type="String" default="name here"/>
+    <aura:attribute name="oppi6_insight" type="String" default="Winning Unlikely"/>
+    <aura:attribute name="oppi6_ar" type="String[]" default="['&nbsp;','&nbsp;','&nbsp;']"/>
+    <aura:attribute name="ins_articles6_ar" type="String[]" default="['&nbsp;','&nbsp;','&nbsp;']"/>
+    
+    <aura:attribute name="insightsContainer" type="Aura.Component[]"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit};" />
+    
+    <div class="wrapper">
+        {!v.insightsContainer}
+    </div>
+    
+</aura:component>

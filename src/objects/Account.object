@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Einstein_Account_Insights__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose the insight you&apos;d like to display for this account</inlineHelpText>
+        <label>Einstein - Account Insights</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Merger &amp; Acquisition</fullName>
+                    <default>false</default>
+                    <label>Merger &amp; Acquisition</label>
+                </value>
+                <value>
+                    <fullName>Company Expanding</fullName>
+                    <default>false</default>
+                    <label>Company Expanding</label>
+                </value>
+                <value>
+                    <fullName>Company Cost Cutting</fullName>
+                    <default>false</default>
+                    <label>Company Cost Cutting</label>
+                </value>
+                <value>
+                    <fullName>Leadership Change</fullName>
+                    <default>false</default>
+                    <label>Leadership Change</label>
+                </value>
+                <value>
+                    <fullName>Prospect unresponsive</fullName>
+                    <default>false</default>
+                    <label>Prospect unresponsive</label>
+                </value>
+                <value>
+                    <fullName>No communication</fullName>
+                    <default>true</default>
+                    <label>No communication</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Einstein_Article_1_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the date for the first article you&apos;d like to display</inlineHelpText>
+        <label>Einstein - Article 1 Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Einstein_Article_1_Source__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the source for the first article you&apos;d like to display</inlineHelpText>
+        <label>Einstein - Article 1 Source</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Einstein_Article_1_Title__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the title for the first article you&apos;d like to display</inlineHelpText>
+        <label>Einstein - Article 1 Title</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Einstein_Article_1_URL__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the URL for the first article you&apos;d like to display</inlineHelpText>
+        <label>Einstein - Article 1 URL</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Einstein_Article_2_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the date for the second article you&apos;d like to display</inlineHelpText>
+        <label>Einstein - Article 2 Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Einstein_Article_2_Source__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the source for the second article you&apos;d like to display</inlineHelpText>
+        <label>Einstein - Article 2 Source</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Einstein_Article_2_Title__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the title for the second article you&apos;d like to display</inlineHelpText>
+        <label>Einstein - Article 2 Title</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Einstein_Article_2_URL__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the URL for the second article you&apos;d like to display</inlineHelpText>
+        <label>Einstein - Article 2 URL</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Einstein_Article_3_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the date for the third article you&apos;d like to display</inlineHelpText>
+        <label>Einstein - Article 3 Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Einstein_Article_3_Source__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the source for the third article you&apos;d like to display</inlineHelpText>
+        <label>Einstein - Article 3 Source</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Einstein_Article_3_Title__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the title for the third article you&apos;d like to display</inlineHelpText>
+        <label>Einstein - Article 3 Title</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Einstein_Article_3_URL__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the URL for the third article you&apos;d like to display</inlineHelpText>
+        <label>Einstein - Article 3 URL</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+</CustomObject>

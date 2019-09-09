@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Boosting_Reason__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the reason why the opportunity is trending up.</inlineHelpText>
+        <label>Einstein - Deal Boosting Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>A higher than usual number of prospect participants</fullName>
+                    <default>false</default>
+                    <label>A higher than usual number of prospect participants</label>
+                </value>
+                <value>
+                    <fullName>An increase in email volume</fullName>
+                    <default>false</default>
+                    <label>An increase in email volume</label>
+                </value>
+                <value>
+                    <fullName>Emails content</fullName>
+                    <default>false</default>
+                    <label>Emails content</label>
+                </value>
+                <value>
+                    <fullName>An increase in number of meetings</fullName>
+                    <default>false</default>
+                    <label>An increase in number of meetings</label>
+                </value>
+                <value>
+                    <fullName>A higher than usual number of internal participants</fullName>
+                    <default>false</default>
+                    <label>A higher than usual number of internal participants</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Competitor_Mentioned__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this to add the &apos;Competitor Mentioned&apos; insight to this oppty</inlineHelpText>
+        <label>Einstein - Competitor Mentioned</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Competitor_they_Mentioned__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What competitor did they mention?</inlineHelpText>
+        <label>Einstein - Competitor they Mentioned</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_to_email__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Contact to email</inlineHelpText>
+        <label>Einstein - Contact to Email</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Opportunities</relationshipLabel>
+        <relationshipName>Opportunities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Deal_Slowing__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this to add the &apos;Deal Slowing&apos; insight to this oppty</inlineHelpText>
+        <label>Einstein - Deal Slowing</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Deal_boosting__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this to add the &apos;Deal Boosting&apos; insight to this oppty</inlineHelpText>
+        <label>Einstein - Deal Boosting</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Email_Body__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Body for email template</inlineHelpText>
+        <label>Einstein - Email Body</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Email_Subject__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Subject for the email template</inlineHelpText>
+        <label>Einstein - Email Subject</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Activity_Subject__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Subject for the last activity in the insights</inlineHelpText>
+        <label>Einstein - Last Activity Subject</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Activity_Text__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the text to be displayed with the last activity in the insight</inlineHelpText>
+        <label>Einstein - Last Activity Text</label>
+        <length>144</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Activity_Type__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What was the last activity this insight tracked?</inlineHelpText>
+        <label>Einstein - Last Activity Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Call</fullName>
+                    <default>false</default>
+                    <label>Call</label>
+                </value>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Name_of_Contact__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of the contact who mentioned the competitor</inlineHelpText>
+        <label>Einstein - Name of Contact</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>No_Communication__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this to add the &apos;No Communication&apos; insight to this oppty</inlineHelpText>
+        <label>Einstein - No Communication</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Prospect_Unresponsive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this to display the &apos;prospect unresponsive&apos; insight on this oppty</inlineHelpText>
+        <label>Einstein - Prospect Unresponsive</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Re_engaged__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Einstein - Re-engaged</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Slowing_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Einstein - Deal Slowing Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>A decrease in email volume</fullName>
+                    <default>false</default>
+                    <label>A decrease in email volume</label>
+                </value>
+                <value>
+                    <fullName>Emails content</fullName>
+                    <default>false</default>
+                    <label>Emails content</label>
+                </value>
+                <value>
+                    <fullName>A decrease in number of meetings</fullName>
+                    <default>false</default>
+                    <label>A decrease in number of meetings</label>
+                </value>
+                <value>
+                    <fullName>A lower than usual number of internal participants</fullName>
+                    <default>false</default>
+                    <label>A lower than usual number of internal participants</label>
+                </value>
+                <value>
+                    <fullName>A lower than usual number of prospect participants</fullName>
+                    <default>false</default>
+                    <label>A lower than usual number of prospect participants</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Task_Overdue__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Einstein - Task Overdue</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Time_Consuming_Oppty__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Einstein - Time Consuming Oppty</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Winning_Unlikely__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <label>Einstein - Winning Unlikely</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+</CustomObject>
